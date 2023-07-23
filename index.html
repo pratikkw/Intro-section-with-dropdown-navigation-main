@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Epilogue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__logo">
+        <img src="images/logo.svg" alt="Snap" />
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__links flex">
+          <li class="list list-1">
+            <a href="#" class="link link-1 flex"
+              >Features
+              <img src="images/icon-arrow-down.svg" class="arrow" alt="Down"
+            /></a>
+
+            <div class="drop-down-menu__container">
+              <div class="drop-down-menu drop-down-menu-1 grid">
+                <a href="#" class="flex link">
+                  <img src="images/icon-todo.svg" class="drop-down__icon" />
+                  Todo List</a
+                >
+                <a href="#" class="flex link">
+                  <img src="images/icon-calendar.svg" class="drop-down__icon" />
+                  Calendar</a
+                >
+                <a href="#" class="flex link">
+                  <img
+                    src="images/icon-reminders.svg"
+                    class="drop-down__icon"
+                  />
+                  Reminders</a
+                >
+                <a href="#" class="flex link">
+                  <img src="images/icon-planning.svg" class="drop-down__icon" />
+                  Planning</a
+                >
+              </div>
+            </div>
+          </li>
+
+          <li class="list list-2">
+            <a href="#" class="link link-2 flex"
+              >Company
+              <img src="images/icon-arrow-down.svg" class="arrow" alt="Down"
+            /></a>
+
+            <div class="drop-down-menu__container">
+              <div class="drop-down-menu drop-down-menu-2 grid">
+                <a href="#" class="flex link"> History</a>
+                <a href="#" class="flex link"> Our Team</a>
+                <a href="#" class="flex link"> Blog</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="list list-3">
+            <a href="#" class="link link-3">Careers</a>
+          </li>
+          <li class="list list-4"><a href="#" class="link link-4">About</a></li>
+          <li class="list list-5"><a href="#" class="link link-5">Login</a></li>
+          <li class="list list-6">
+            <a href="#" class="link link-6">Register</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__menu">
+        <input type="checkbox" id="checkbox" class="header__checkbox" />
+        <label for="checkbox" class="header__label">
+          <span class="header__span"></span>
+        </label>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero-page">
+        <div class="container">
+          <div class="hero-page__container grid">
+            <div class="hero-page__content">
+              <div class="hero-page__sub-content grid">
+                <h1 class="primary-heading">Make remote work</h1>
+                <p class="para">
+                  Get your team in sync, no matter your location. Streamline
+                  processes, create team rituals, and watch productivity soar.
+                </p>
+                <button class="btn">Learn more</button>
+              </div>
+
+              <div class="hero-page__client flex">
+                <img src="images/client-databiz.svg" alt="Databiz" />
+                <img src="images/client-audiophile.svg" alt="Audiophile" />
+                <img src="images/client-meet.svg" alt="Meet" />
+                <img src="images/client-maker.svg" alt="Maker" />
+              </div>
+            </div>
+
+            <div class="hero-page__img">
+              <picture>
+                <source
+                  srcset="images/image-hero-mobile.png"
+                  media="(max-width: 850px)"
+                />
+                <img src="images/image-hero-desktop.png" alt="Hero Desktop" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bk"></div>
+    </main>
+  </body>
+
+  <script defer src="JS/script.js"></script>
+</html>
