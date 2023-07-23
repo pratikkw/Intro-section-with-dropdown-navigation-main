@@ -16,10 +16,12 @@ drop_down_menu__btn.forEach((item, ind) => {
 label__btn.addEventListener("click", function () {
   nav__slider.classList.toggle("header__nav--active");
   bk.classList.toggle("bk--active");
+  document.body.classList.toggle("scroll-lock");
 });
 
 bk.addEventListener("click", function () {
   nav__slider.classList.toggle("header__nav--active");
   bk.classList.toggle("bk--active");
   checkbox.checked = false;
+  document.body.classList.toggle("scroll-lock");
 });

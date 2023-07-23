@@ -45,6 +45,10 @@ body {
   position: relative;
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 /* UTILITIES */
 .flex {
   display: flex;
